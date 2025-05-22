@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh H5P Standalone</title>
+  <script src="assets/main.bundle.js"></script>
+  <link rel="stylesheet" href="assets/styles/h5p.css">
+</head>
+<body>
+  <h1>Demo H5P</h1>
+  <div id="h5p-container"></div>
+
+  <script>
+    const el = document.getElementById('h5p-container');
+    const options = {
+      h5pJsonPath: 'h5p',
+      frameJs: 'assets/frame.bundle.js',
+      frameCss: 'assets/styles/h5p.css'
+    };
+    new H5PStandalone.H5P(el, options);
+  </script>
+</body>
+</html>
